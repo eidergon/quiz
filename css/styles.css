@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/empresa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    place-items: center;
+}
+
+.form {
+    width: auto;
+    display: grid;
+    place-items: center;
+    gap: 20px;
+    width: 600px;
+    padding: 10px;
+    box-shadow: 0 0 10px #000;
+    border: none;
+    border-radius: .8rem;
+    background-color: #ffffff7a;
+    box-shadow: rgba(255, 255, 255, 0.368) 1px 0px 20px 4px;
+}
+
+.container-pre {
+    border: none;
+    box-shadow: 0 0 15px #000;
+    border-radius: .8rem;
+    display: grid;
+    place-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.btn {
+    border: none;
+    border-radius: .8rem;
+    padding: 10px;
+    background-color: #11B6E7;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn.volver {
+    position: fixed; 
+    top: 10px; 
+    left: 10px;
+}
+
+/* -----Emcabezado----- */
+header {
+    color: #000;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    gap: 20px;
+    padding: 0 10px;
+    background-color: #ffffff7a;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+}
+
+h3 {
+    text-transform: capitalize;
+    color: #000;
+}
+
+/* -----Navbar con menu y submenu----- */
+.navbar {
+    padding: 0.5rem 1.5rem;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link,
+.drop-down li {
+    list-style: none;
+    height: 100%;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.drop-down {
+    position: absolute;
+    padding: 0.5rem 0;
+    margin: 0.5rem -0.5rem;
+    background-color: #ffffff29;
+    color: #000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    font-size: 12px;
+    display: none;
+}
+
+.nav-link:hover {
+    background-color: #fff;
+    color: #000;
+    border-radius: 0.5rem;
+    transition: background-color 0.5s ease;
+}
+
+.service:hover .drop-down {
+    display: block;
+}
+
+.service a {
+    display: flex;
+}
+
+.service .drop-icon {
+    font-size: 18px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: .3s ease-in-out all;
+}
+
+.service:hover .drop-icon {
+    transform: rotate(180deg);
+}
+
+.drop-down li:hover {
+    background-color: #fff;
+    color: #000;
+    border-radius: 0.5rem;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.icon i {
+    font-size: 25px;
+    cursor: pointer;
+    transition: .3s ease-in-out all;
+}
+
+.icon i:hover {
+    color: red;
+}
+
+/* -----Contenedor dinamico----- */
+main {
+    margin-top: 80px;
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    width: 90%;
+}
+
+/* -----tabla-----  */
+.table {
+    background-color: #fff5;
+    border-radius: .8rem;
+    text-align: center;
+    padding: 1rem;
+    border-collapse: collapse;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+th {
+    color: #000;
+    padding: 10px;
+    border: none;
+    background-color: #ffffff7a;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.637)
+}
+
+td {
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    font-weight: 600;
+}
+
+.td {
+    max-width: 15em;
+    overflow-wrap: break-word;
+}
+
+.table tbody tr:hover td {
+    color: #000;
+
+}
+
+.no-data {
+    text-align: center;
+    font-style: italic;
+    color: #fff;
+}
+
+.select {
+    width: 100%;
+    height: 40px;
+    background-color: #ffffff7a;
+    border: none;
+    box-shadow: #000 0px 10px 10px -5px;
+    border-inline: 2px solid transparent;
+    border-radius: 30px;
+    color: black;
+    font-size: 0.8em;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding-left: 30px;
+    resize: none;
+}
+
+.select::placeholder {
+    color: #000;
+}
+
+.select:focus {
+    outline: none;
+    border-inline: 2px solid #12b1d1
+}
+
+.select[type=number]::-webkit-inner-spin-button,
+.select[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.pagination-container button{
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/* -----busqueda----- */
+.visualizar {
+    margin: 0 auto;
+    background-color: transparent;
+    border-radius: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.container-input {
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.container-input .input {
+    width: 150px;
+    padding: 10px 0px 10px 40px;
+    border-radius: 9999px;
+    transition: all .2s ease-in-out;
+    outline: none;
+    opacity: 0.8;
+    box-shadow: 2px 5px 10px rgb(5, 5, 5);
+    color: #fff;
+}
+
+.container-input .input::placeholder {
+    color: #fff;
+}
+
+.container-input svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+}
+
+.container-input .input:focus {
+    opacity: 1;
+    width: 250px;
+}
+
+.container-input .date {
+    color: #000;
+    font-family: serif;
+    background: #ffffff7a;
+}
+
+.container-input .date:focus {
+    width: initial;
+}
+
+.envia {
+    border: none;
+    border-radius: .8rem;
+    padding: 10px;
+    background-color: #11B6E7;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.envia:hover {
+    box-shadow: 0 0 5px #fff, 0 0 25px #fff;
+}

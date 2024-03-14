@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/empresa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form {
+    width: 400px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.285);
+    border-radius: 20px;
+}
+
+.form .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.form .form-container .input {
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 1em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 300ms ease-in-out;
+}
+
+.form .form-container .input:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696, -13px -13px 100px #ffffff;
+}
+
+.form .form-container .btn {
+    border: none;
+    border-radius: .8rem;
+    padding: 10px;
+    background-color: #11B6E7;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.form .form-container .btn:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form .form-container .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.message {
+    font-size: 10px;
+    font-weight: 500;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
